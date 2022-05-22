@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hotove TodoS</title>
+    
+    </head>
+    <body>
+
+        <h2>Completed Items</h2>
+        <ul>
+            {% for note in complete %}
+            <li style="font-size: 30pt">{{ note.data }}</li>
+            {% endfor %}
+        </ul>
+
+        <a href="/">HOME</a>
+
+    </body>
+
+</html>
